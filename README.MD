@@ -48,5 +48,8 @@ Guardar datos para post analisis
 # plot2.py
 Graficos en series de tiempos de las tres variables
 
-#plot3.py
+# plot3.py
 Grafico en 3D para orientación
+
+# plot4.py
+Integración de aceleración lineal. Se nota el drift/deriva constante por ruido asociado
