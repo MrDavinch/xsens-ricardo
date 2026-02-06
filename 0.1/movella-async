@@ -1,0 +1,16 @@
+from xdpchandler import *
+
+xdpcHandler = XdpcHandler()
+xdpcHandler.initialize()
+xdpcHandler.scanForDots()
+xdpcHandler.connectDots()
+
+device = xdpcHandler.connectedDots()[0]
+
+device.startMeasurement(movelladot_pc_sdk.XsPayloadMode_Euler)
+
+while True:
+    if xdpcHandler.packetsAvailable():
+        packet = xdpcHandler.getNextPacket(device.bluetoothAddress())
+        euler = packet.orientationEuler()
+        print(euler.x(), euler.y(), euler.z())

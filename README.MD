@@ -20,3 +20,5 @@ six               1.17.0
 
 BLEE?
 DASH?
+
+XsPayloadMode_OrientationQuaternion, XsPayloadMode_RateQuantitieswMag. XsPayloadMode_CompleteQuaternion,XsPayloadMode_ExtendedQuaternion.XsPayloadMode_DeltaQuantities,XsPayloadMode_DeltaQuantitieswMag,XsPayloadMode_HighFidelitywMag

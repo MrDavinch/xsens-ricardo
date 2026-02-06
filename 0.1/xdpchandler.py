@@ -384,8 +384,7 @@ class XdpcHandler(movelladot_pc_sdk.XsDotCallback):
         data["gz"] = g[2]
 
         self.realtime_queue.put(data)
-
-
+        
     def onProgressUpdated(self, device, current, total, identifier):
         """
         Called when a long-duration operation has made some progress or has completed.
