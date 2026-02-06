@@ -6,12 +6,6 @@ Para Ejecutar cualquier código deben instalarse los sisguientes requerimientos:
 
        -Soporta **Python**, C++, C#, Java como lenguajes
 
-<<<<<<< HEAD
-BLEE?
-DASH?
-
-XsPayloadMode_OrientationQuaternion, XsPayloadMode_RateQuantitieswMag. XsPayloadMode_CompleteQuaternion,XsPayloadMode_ExtendedQuaternion.XsPayloadMode_DeltaQuantities,XsPayloadMode_DeltaQuantitieswMag,XsPayloadMode_HighFidelitywMag
-=======
        -Comunicación Bluetooth 5.0 BLE (10m)
       
        -Escaneo y conexión/desconexión de dispositivos DOT
@@ -28,5 +22,31 @@ XsPayloadMode_OrientationQuaternion, XsPayloadMode_RateQuantitieswMag. XsPayload
 
  5. Matplotlib Gráficas
 
- 6. Queue
->>>>>>> bd8591cdb3af5d16f2b94b77b0064d7dae2d3c7a
+ 6. Queue - Cola segura para datos en tiempo real
+ 
+ 7. defaultdict - Diccionario que crea listas automáticamente
+
+ 8. pynput.keyboard - Detectar teclas 
+ 
+ 9. time - delays y temporización
+
+# user_settings.py
+Script con mobres generales del Movella y personalización de usuario
+
+# xdpchandler.py
+Script con la clase handler para: Detectar sensores Movella DOT, conectar por Bluetooth o USB, Escucha eventos (callbacks) del SDK, Recibe datos IMU en tiempo real y se pueden guardar.
+La función "onLiveDataAvailable" da el Time stamp, Orientación en cuaterniones evitando gimball block (a implementar con filtros complementarios/magwick/kalman), aceleración lineal (sin bias gravitatoria) y giroscopio 
+
+# modos_data.py
+Paylods detectados
+
+XsPayloadMode_OrientationQuaternion, XsPayloadMode_RateQuantitieswMag. XsPayloadMode_CompleteQuaternion,XsPayloadMode_ExtendedQuaternion.XsPayloadMode_DeltaQuantities,XsPayloadMode_DeltaQuantitieswMag,XsPayloadMode_HighFidelitywMag
+
+# recordData.py
+Guardar datos para post analisis
+
+# plot2.py
+Graficos en series de tiempos de las tres variables
+
+#plot3.py
+Grafico en 3D para orientación
