@@ -1,4 +1,4 @@
-# REPOSITORIO DEL PROYECTO: DESARROLLO DE UN SISTEMA DE TELEMANIPULACIÓN REMOTA CON TECNOLOGÍA VESTIBLE PARA LA OPERACIÓN DEL ROBOT UR3 EN LABORATORIOS DE ALTO RIESGO QUÍMICO Y BIOLÓGICO 
+# REPOSITORIO DEL PROYECTO UR3: DESARROLLO DE UN SISTEMA DE TELEMANIPULACIÓN REMOTA CON TECNOLOGÍA VESTIBLE PARA LA OPERACIÓN DEL ROBOT UR3 EN LABORATORIOS DE ALTO RIESGO QUÍMICO Y BIOLÓGICO 
 
 Para Ejecutar cualquier código deben instalarse los sisguientes requerimientos:
  1. movelladot-pc-sdk 2023.6.0: Kit de desarrollo de software que permite crear aplicaciones en Windows y Linux para trabajar directamente con los sensores Xsens DOT. Incluye librerías básicas y APIs. Este sdk es compatible con la versión 3.0.0 de Movella
